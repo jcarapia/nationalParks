@@ -1,26 +1,34 @@
 {
-  "name": "us-map",
+  "name": "react-webpack-scss",
   "version": "1.0.0",
-  "description": "data and information for us national parks",
-  "main": "app.js",
-  "directories": {
-    "example": "example"
-  },
+  "description": "A React Template with Webpack and SCSS",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "dev": "webpack-dev-server",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jcarapia/us-map.git"
   },
   "author": "Jorge Carapia",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jcarapia/us-map/issues"
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "image-webpack-loader": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   },
-  "homepage": "https://github.com/jcarapia/us-map#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }

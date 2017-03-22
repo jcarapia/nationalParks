@@ -1,16 +1,17 @@
-const express = require('express');
-const http = require('http');
-const path = require('path');
+var express = require('express');
+var http = require('http');
+var path = require('path');
 
-const app = express();
-app.use(express.static(__dirname));
+var app = express();
 
-let PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
-const server = http.createServer(app);
+app.use('/public', express.static('./public'));
+
+var server = http.createServer(app);
 server.listen(PORT);
-console.log('The magic happens in port: ', PORT);
+console.log('Server listening on port ' + PORT);
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'))
-})
+});
