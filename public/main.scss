@@ -1,3 +1,12 @@
+$primary-color: green;
+$secondary-color: #4f310a; 
+$highlight-color: #e67e22;
+$background-color: red;
+$facebook: #3b5998;
+$linkedin: #0077B5;
+$github: #6e5494;
+$medium: #00AB6C;
+
 
 /* ----------------------------- 
    Basic Setup 
@@ -17,6 +26,7 @@ html, body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  background-color: #ecf0f1;
 }
 
 /* ----------------------------- 
@@ -73,7 +83,6 @@ header {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  padding-top: 0px;
 }
 
 // header > .logo-small {
@@ -135,3 +144,58 @@ header {
   display: inline-block;
   margin: 0 auto;
 }
+
+/* ----------------------------- 
+   Footer Section 
+/* ----------------------------- */
+
+footer {
+  background-color: $secondary-color;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer p {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 75%;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.social-media li a {
+  border-bottom: 0;
+  color: #ccc
+}
+
+.ion-social-facebook:hover {
+  color: $facebook;
+}
+
+.ion-social-linkedin:hover {
+  color: $linkedin;
+}
+
+.ion-social-github:hover {
+  color: $github;
+}
+
+.fa-medium:hover {
+  color: $medium;
+}
+
+
+
+
+

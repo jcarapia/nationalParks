@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Landing from './Landing';
-import ClickMap from  './ClickMap'
+import ClickMap from  './ClickMap';
+import Footer from './Footer';
 
 require('../public/main.scss');
 
@@ -12,7 +13,8 @@ class App extends Component {
     return (
       <div>
         <Landing />
-        <ClickMap />  
+        <ClickMap />
+        <Footer />  
       </div>      
     )
   }
