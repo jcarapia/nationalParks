@@ -4,7 +4,10 @@ class ClickMap extends Component {
 
   render() {
     return (
-      <div id="map2"></div>
+      <div className="container">
+        <div id="map2"></div>  
+      </div>
+      
     )
   }
 }
