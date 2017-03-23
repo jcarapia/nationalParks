@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Hero from './Hero'
+
 class Landing extends Component{
   
   render() {
@@ -13,6 +15,8 @@ class Landing extends Component{
             <li><a href="#">About</a></li>
           </ul>
         </nav>
+
+        <Hero />
       </header>
     )  
   }

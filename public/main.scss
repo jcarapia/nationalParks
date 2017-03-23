@@ -20,7 +20,7 @@ $medium: #00AB6C;
 
 html, body {
   font-size: 23px;
-  color: #555;
+  color: #fff;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -83,18 +83,77 @@ header {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
-// header > .logo-small {
-  
-// }
+.hero {
+  vertical-align: text-bottom;
+  background-color: $primary-color;
+  align-self: flex-end;
+  opacity: 0.8;
+  padding: 5px 0;
+}
+
+.hero .what-is-trailstar {
+  padding-left: 30px;
+  display: inline-block;
+  width: 50%;
+}
+
+.hero .title {
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: bold;
+  color: $highlight-color;
+  letter-spacing: 0.2em;
+}
+
+.hero .header {
+  letter-spacing: 0.1em;
+}
+
+.hero .secondary {
+  font-size: 75%;
+}
+
+.hero a {
+  font-size: 75%;
+  letter-spacing: 0.1em;
+  border-bottom: 0;
+  text-transform: uppercase;
+}
+
+.hero .slideshow {
+  text-align: right;
+  padding-right: 5%;
+  display: inline-block;
+  width: 50%;
+}
+
+.slideshow img {
+  max-width: 240px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.hero figcaption {
+  color: $highlight-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 75%;
+}
+
 
 /* ----------------------------- 
    Main Navigation 
 /* ----------------------------- */ 
 
 .main-nav {
-  background-color: green;
+  background-color: $primary-color;
   height: 80px;
   opacity: 0.8;
   display: flex;
@@ -118,6 +177,7 @@ header {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: .25em;
   font-size: 90%;
   border-bottom: 2px solid transparent;
   transition: border-bottom .2s;
