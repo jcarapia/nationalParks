@@ -4,9 +4,9 @@ class ClickMap extends Component {
 
   render() {
     return (
-      <div className="container">
+      <section className="section-map">
         <div id="map2"></div>  
-      </div>
+      </section>
       
     )
   }
