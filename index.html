@@ -7,60 +7,8 @@
   <script src="/public/scripts/raphael.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
   <script src="/public/scripts/jquery.usmap.js"></script>
-  <script>
-  $(document).ready(function() {
-    // $('#map').usmap({
-    //   'stateSpecificStyles': {
-    //     'AK' : {fill: '#ccc'}
-    //   },
-    //   'stateSpecificHoverStyles': {
-    //     'HI' : {fill: '#ff0'}
-    //   },
-      
-    //   'mouseoverState': {
-    //     'HI' : function(event, data) {
-    //       //return false;
-    //     }
-    //   },
-      
-      
-    //   'click' : function(event, data) {
-    //     $('#alert')
-    //       .text('Click '+data.name+' on map 1')
-    //       .stop()
-    //       .css('backgroundColor', '#ff0')
-    //       .animate({backgroundColor: '#ddd'}, 1000);
-    //   }
-    // });
-    
-    $('#map2').usmap({
-      'stateStyles': {
-        fill: '#ccc', 
-        "stroke-width": 1,
-        'stroke' : '#036'
-      },
-      'stateHoverStyles': {
-        fill: 'teal'
-      },
-      
-      'click' : function(event, data) {
-        $('#alert')
-          .text('Clicked '+data.name)
-          .stop()
-          .css('backgroundColor', '#af0')
-          .animate({backgroundColor: '#ddd'}, 1000);
-      }
-    });
-    
-    $('#over-md').click(function(event){
-      $('#map').usmap('trigger', 'MD', 'mouseover', event);
-    });
-    
-    $('#out-md').click(function(event){
-      $('#map').usmap('trigger', 'MD', 'mouseout', event);
-    });
-  });
-  </script>
+  <script src="/public/scripts/clickableMap.js"></script>
+
 
 </head>
 <body>

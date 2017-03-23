@@ -13,8 +13,7 @@ class App extends Component {
       <div>
         <Landing />
         <ClickMap />  
-      </div>
-      
+      </div>      
     )
   }
 };
