@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-import Hero from './Hero'
+import ClickMap from './ClickMap';
+import Footer from './Footer';
+import Hero from './Hero';
 
 class Landing extends Component{
   
   render() {
     return (
+      <div>
       <header>
         <nav className="main-nav">
           <img className="logo-small" src="../public/images/logo-title-right.png" />
@@ -15,9 +18,11 @@ class Landing extends Component{
             <li><a href="#">About</a></li>
           </ul>
         </nav>
-
         <Hero />
       </header>
+      <ClickMap />
+      <Footer />
+      </div>
     )  
   }
 }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Router, Match, Link, BrowserRouter } from 'react-router'
 
 import Landing from './Landing';
-import ClickMap from  './ClickMap';
-import Footer from './Footer';
 
 require('../public/main.scss');
 
@@ -11,14 +10,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Landing />
-        <ClickMap />
-        <Footer />  
-      </div>      
+      <Match exactly pattern="/" component={()=> <Landing/>} />     
     )
   }
 };
 
-ReactDOM.render(<App />, document.querySelector("#app"));
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.querySelector("#app"));
 
