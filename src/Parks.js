@@ -10,7 +10,7 @@ class Parks extends Component {
       <div className="parks">
         <NavBar showSearch />
         <section>
-          <Carousel />
+          Placeholder
         </section>
         <Footer />
       </div>

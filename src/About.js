@@ -7,7 +7,7 @@ import Footer from './Footer';
 class About extends Component {
   render() {
     return (
-      <div className="About" >
+      <div className="about" >
         <NavBar showHome />
         <section>
           Placeholder
