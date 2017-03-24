@@ -10,7 +10,14 @@ class About extends Component {
       <div className="about" >
         <NavBar showHome />
         <section>
-          Placeholder
+          <q>
+            Thousands of tired, nerve-shaken, over-civilized people are
+            beginning to find out going to the moutains is going home; 
+            that wilderness is a necessity...
+          </q>
+          <p>
+            - John Muir
+          </p>
         </section>
         <Footer />
       </div>

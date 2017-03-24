@@ -210,12 +210,24 @@ header {
 /* ----------------------------- */ 
 
 .about {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/big-bend.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+
 }
 
+.about section {
+  width: 75%;
+  margin: 0 auto;
+  font-family: 'Coming Soon', cursive;
+  font-size: 150%;
+  text-align: center;
+}
 
 /* ----------------------------- 
    Footer Section 
