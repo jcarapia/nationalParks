@@ -14,6 +14,10 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/public/'
   },
+  devServer: {
+    publicPath: '/public/',
+    historyApiFallback: true
+  },
   resolve: {
     extensions: ['.js', '.json']
   },

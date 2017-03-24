@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 import ClickMap from './ClickMap';
 import Footer from './Footer';
 import Hero from './Hero';
+import NavBar from './NavBar';
 
 class Landing extends Component{
   
@@ -10,14 +12,7 @@ class Landing extends Component{
     return (
       <div>
       <header>
-        <nav className="main-nav">
-          <img className="logo-small" src="../public/images/logo-title-right.png" />
-          <ul>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Park Info</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
+        <NavBar />
         <Hero />
       </header>
       <ClickMap />
