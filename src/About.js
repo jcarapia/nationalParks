@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <div className="about" >
         <NavBar showHome />
-        <section>
+        <div className="quote">
           <q>
             Thousands of tired, nerve-shaken, over-civilized people are
             beginning to find out going to the moutains is going home; 
@@ -18,7 +18,7 @@ class About extends Component {
           <p>
             - John Muir
           </p>
-        </section>
+        </div>
         <Footer />
       </div>
     )

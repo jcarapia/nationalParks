@@ -27,12 +27,13 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.15.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "4.0.0-alpha.5",
+    "react-select": "0.9.1",
     "react-slick": "^0.14.7",
-    "slick-carousel": "^1.6.0",
-    "react-select": "0.9.1"
+    "slick-carousel": "^1.6.0"
   }
 }

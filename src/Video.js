@@ -7,12 +7,17 @@ const Video = ({video}) => {
   // }
 
   //const videoId = 'TiJtxItuC18';
-  const url = `https://www.youtube.com/embed/${video}`;
+  //const url = `https://www.youtube.com/embed/${video}`;
 
   return (
-      <div>
-        <iframe src={url}></iframe>
-      </div>
+
+      <iframe 
+          src={`https://www.youtube-nocookie.com/embed/${video}?rel=0&amp;controls=0&amp;showinfo=0`} 
+          frameBorder='0'
+          width="450"
+          allowFullScreen>
+      </iframe>
+
   )
 };
 
