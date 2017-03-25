@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+import Select from './Select';
+
 class NavBar extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {placeholder: 'test'}
+  }
+
+  // getPark(park) {
+  //   //console.log('***', park)
+  //   //this.setState({placeholder: park})
+  // }
+
   render() {
 
     let utilSpace;
+    let getPark = this.props.getPark;
 
     if(this.props.showHome) {
       utilSpace = (
@@ -16,8 +30,8 @@ class NavBar extends Component {
     } else if (this.props.showSearch) {
       utilSpace = (
         <ul>
-          <input type="text" placeholder="placeholder"/>
-          <li><Link to="/"> Home </Link></li>
+          <li><Select getPark={getPark} /></li>
+          <li><Link to="/"> {this.state.placeholder} </Link></li>
         </ul>
       )
     } else {
