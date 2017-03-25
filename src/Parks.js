@@ -24,13 +24,25 @@ class Parks extends Component {
     //     console.dir(resp);
     // });
 
-    let config = {key: 'Authorization', value: 'FB68E536-BB67-40A2-91BF-DC8B9D510793'};
-    axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell', config)
-    .then((resp) => {
-        console.dir(resp);
-    });
+    // let config = {key: 'Authorization', value: 'FB68E536-BB67-40A2-91BF-DC8B9D510793'};
+    // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell', config)
+    // .then((resp) => {
+    //     console.dir(resp);
+    // });
 
     //let park = axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell',  'FB68E536-BB67-40A2-91BF-DC8B9D510793');
+    var myHeaders = new Headers({"Authorization": "FB68E536-BB67-40A2-91BF-DC8B9D510793",
+                                  "Content-Type": "application/json"
+                               });
+    //myHeaders.append('Authorization', 'FB68E536-BB67-40A2-91BF-DC8B9D510793');
+    var myInit = { method: 'GET',
+               headers: myHeaders,
+               mode: 'cors',
+               cache: 'default' };
+    fetch('https://developer.nps.gov/api/v0/parks?parkCode=yell', myInit)  
+    .then(function(response) {  
+    console.log(response) 
+  })  
 
   }
 
@@ -66,7 +78,9 @@ class Parks extends Component {
 
         <section>
           <h3 className="park-title">Placeholder</h3>
+
         </section>
+
         <Footer />
       </div>
     )

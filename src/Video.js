@@ -14,7 +14,8 @@ const Video = ({video}) => {
       <iframe 
           src={`https://www.youtube-nocookie.com/embed/${video}?rel=0&amp;controls=0&amp;showinfo=0`} 
           frameBorder='0'
-          width="450"
+          width="600"
+          height= "338"
           allowFullScreen>
       </iframe>
 
