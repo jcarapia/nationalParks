@@ -22,7 +22,7 @@ class Hero extends Component {
           </p>
           <a href="#">Learn more about the National Park System</a>
         </div>
-        <SlideShow />
+        
       </div>
     )
   }
