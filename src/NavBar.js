@@ -4,16 +4,6 @@ import { Link } from 'react-router';
 import Select from './Select';
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {placeholder: 'test'}
-  }
-
-  // getPark(park) {
-  //   //console.log('***', park)
-  //   //this.setState({placeholder: park})
-  // }
 
   render() {
 
@@ -31,7 +21,7 @@ class NavBar extends Component {
       utilSpace = (
         <ul>
           <li><Select getPark={getPark} /></li>
-          <li><Link to="/"> {this.state.placeholder} </Link></li>
+          <li><Link to="/"> Home </Link></li>
         </ul>
       )
     } else {
