@@ -19,6 +19,7 @@ class NavBar extends Component {
       )
     } else if (this.props.showSearch) {
       utilSpace = (
+        
         <ul>
           <li><Select getPark={getPark} /></li>
           <li><Link to="/"> Home </Link></li>
