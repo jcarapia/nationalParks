@@ -6,8 +6,7 @@ class ClickMap extends Component {
     return (
       <section className="section-map">
         <div id="map2"></div>  
-      </section>
-      
+      </section> 
     )
   }
 }

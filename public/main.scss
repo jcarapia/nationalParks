@@ -206,6 +206,12 @@ header {
 }
 
 /* ----------------------------- 
+   Parks Section 
+/* ----------------------------- */ 
+
+
+
+/* ----------------------------- 
    About Section 
 /* ----------------------------- */ 
 
@@ -216,7 +222,7 @@ header {
   background-attachment: fixed;
   height: 100vh;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
 
 }
