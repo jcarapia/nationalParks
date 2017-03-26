@@ -56,12 +56,13 @@ class Parks extends Component {
 
     let video = this.state.park.video;
     let desc = this.state.park.desc;
+    let climate = this.state.park.climate;
 
     return (
       <div className="parks">
         <NavBar showSearch getPark={this.getPark.bind(this)} />
 
-        <section>
+        <section className="information">
           <h1 className="park-title">{this.state.park.name} National Park</h1>
           
           <div className="row">
@@ -69,16 +70,16 @@ class Parks extends Component {
               <Video video ={video} />  
             </div>
             <div className="col span-1-of-2">
-              <p>
-                {desc}
-              </p>  
+              <h3>Description</h3>
+              <p>{desc}</p>
+              <h3>Climate</h3>
+              <p>{climate}</p>   
             </div>
           </div>
         </section>
 
         <section>
           <h3 className="park-title">Placeholder</h3>
-
         </section>
 
         <Footer />
