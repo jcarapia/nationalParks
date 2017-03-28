@@ -15,7 +15,6 @@ class Landing extends Component{
         <NavBar />
         <Hero />
       </header>
-      
       <Footer />
       </div>
     )  

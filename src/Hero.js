@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import SlideShow from './SlideShow'
+
 
 class Hero extends Component {
+
   render() {
     return (
       <div className="hero">
@@ -20,7 +21,7 @@ class Hero extends Component {
             information such as founding date, size, visitors pear year.
             You will also have access to events, articles, and news releases.
           </p>
-          <a href="#">Learn more about the National Park System</a>
+
         </div>
         
       </div>

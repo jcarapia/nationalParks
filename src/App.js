@@ -13,9 +13,9 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Match exactly pattern="/" component={()=> <Landing/>} />     
-      <Match pattern="/parks" component={()=> <Parks/>} />
-      <Match pattern="/about" component={()=> <About/>} />
+        <Match exactly pattern="/" component={()=> <Landing/>} />     
+        <Match pattern="/parks" component={()=> <Parks/>} />
+        <Match pattern="/about" component={()=> <About/>} />
       </div>
     )
   }

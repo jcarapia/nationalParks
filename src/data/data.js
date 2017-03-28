@@ -2,6 +2,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Denali',
+      twitter: 'DenaliNPS',
       code: 'dena',
       year: 'February 26, 1917',
       size: 4740911,
@@ -23,7 +24,8 @@ let parks = [
     },
     {
       state: 'Alaska',
-      name: 'Gates of the Artic',
+      name: 'Gates of the Arctic',
+      twitter: 'GatesArcticNPS',
       code: 'gaar',
       year: 'December 2, 1980',
       size: 7523897,
@@ -46,6 +48,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Glacier Bay',
+      twitter: 'GlacierBayNPS',
       code: 'glba',
       year: 'December 2, 1980',
       size: 3223383,
@@ -68,6 +71,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Katmai',
+      twitter: 'KatmaiNPS',
       code: 'katm',
       year: 'December 2, 1980',
       size: 3674368,
@@ -90,6 +94,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Kenai Fjords',
+      twitter: 'KenaiFjordsNPS',
       code: 'kefj',
       year: 'December 2, 1980',
       size: 669983,
@@ -112,6 +117,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Kobuk Valley',
+      twitter: 'AlaskaNPS',
       code: 'kova',
       year: 'December 2, 1980',
       size: 1750716,
@@ -134,6 +140,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Lake Clark',
+      twitter: 'LakeClarkNPS',
       code: 'lacl',
       year: 'December 2, 1980',
       size: 2619836,
@@ -156,6 +163,7 @@ let parks = [
     {
       state: 'Alaska',
       name: 'Wrangell - St. Elias',
+      twitter: 'WrangellStENPS',
       code: 'wrst',
       year: 'December 2, 1980',
       size: 8323146,
@@ -178,6 +186,7 @@ let parks = [
     {
       state: 'American Samoa',
       name: 'American Samoa',
+      twitter: 'Amer_SamoaNPS',
       code: 'npsa',
       year: 1980,
       size: 8256,
@@ -200,6 +209,7 @@ let parks = [
     {
       state: 'Arizona',
       name: 'Grand Canyon',
+      twitter: 'GrandCanyonNPS',
       code: 'grca',
       year: 1919,
       size: 1201647,
@@ -222,6 +232,7 @@ let parks = [
     {
       state: 'Arizona',
       name: 'Petrified Forest',
+      twitter: 'PetrifiedNPS',
       code: 'pefo',
       year: 1962,
       size: 221416,
@@ -244,6 +255,7 @@ let parks = [
     {
       state: 'Arizona',
       name: 'Saguaro',
+      twitter: 'SaguaroNPS',
       code: 'sagu',
       year: 'October 14, 1994',
       size: 91442,
@@ -266,6 +278,7 @@ let parks = [
     {
       state: 'Arkansas',
       name: 'Hot Springs',
+      twitter: 'NatlParkService',
       code: 'hosp',
       year: 1921,
       size: 5549,
@@ -288,6 +301,7 @@ let parks = [
     {
       state: 'California',
       name: 'Channel Islands',
+      twitter: 'CHISNPS',
       code: 'chis',
       year: 1980,
       size: 249561,
@@ -310,6 +324,7 @@ let parks = [
     {
       state: 'California',
       name: 'Death Valley',
+      twitter: 'DeathValleyNPS',
       code: 'deva',
       year: 1994,
       size: 3373063,
@@ -332,6 +347,7 @@ let parks = [
     {
       state: 'California',
       name: 'Joshua Tree',
+      twitter: 'JoshuaTreeNPS',
       code: 'jotr',
       year: 1994,
       size: 790635,
@@ -354,6 +370,7 @@ let parks = [
     {
       state: 'California',
       name: 'Kings Canyon',
+      twitter: 'SequoiaKingsNPS',
       code: 'seki',
       year: 1940,
       size: 461901,
@@ -376,6 +393,7 @@ let parks = [
     {
       state: 'California',
       name: 'Lassen Volcanic',
+      twitter: 'LassenNPS',
       code: 'lavo',
       year: 'August 9, 1916',
       size: 106589,
@@ -398,6 +416,7 @@ let parks = [
     {
       state: 'California',
       name: 'Pinnacles',
+      twitter: 'PinnaclesNPS',
       code: 'pinn',
       year: 'January 10, 2013',
       size: 26685,
@@ -420,6 +439,7 @@ let parks = [
     {
       state: 'California',
       name: 'Redwood',
+      twitter: 'RedwoodNPS',
       code: 'redw',
       year: 'October 2, 1968',
       size: 138999,
@@ -442,6 +462,7 @@ let parks = [
     {
       state: 'California',
       name: 'Sequoia',
+      twitter: 'SequoiaKingsNPS',
       code: 'seki',
       year: 'September 25, 1890',
       size: 404062,
@@ -464,6 +485,7 @@ let parks = [
     {
       state: 'California',
       name: 'Yosemite',
+      twitter: 'YosemiteNPS',
       code: 'yose',
       year: 'October 1, 1890',
       size: 761347,
@@ -486,6 +508,7 @@ let parks = [
     {
       state: 'Colorado',
       name: 'Black Canyon of the Gunnison',
+      twitter: 'BlackCanyonNPS',
       code: 'blca',
       year: 'October 21, 1999',
       size: 30750,
@@ -508,6 +531,7 @@ let parks = [
     {
       state: 'Colorado',
       name: 'Great Sand Dunes',
+      twitter: 'NatlParkService',
       code:'grsa',
       year: 'September 13, 2004',
       size: 107301,
@@ -530,6 +554,7 @@ let parks = [
     {
       state: 'Colorado',
       name: 'Mesa Verde',
+      twitter: 'NatlParkService',
       code: 'meve',
       year: 'June 29, 1906',
       size: 52485,
@@ -552,6 +577,7 @@ let parks = [
     {
       state: 'Colorado',
       name: 'Rocky Mountain',
+      twitter: 'RockyNPS',
       code: 'romo',
       year: 'January 26, 1915',
       size: 265795,
@@ -574,6 +600,7 @@ let parks = [
     {
       state: 'Florida',
       name: 'Biscayne',
+      twitter: 'BiscayneNPS',
       code: 'bisc',
       year: 'June 28, 1980',
       size: 172971,
@@ -596,6 +623,7 @@ let parks = [
     {
       state: 'Florida',
       name: 'Dry Tortugas',
+      twitter: 'DryTortugasNPS',
       code: 'drto',
       year: 'October 26, 1992',
       size: 64701,
@@ -618,6 +646,7 @@ let parks = [
     {
       state: 'Florida',
       name: 'Everglades',
+      twitter: 'EvergladesNPS',
       code: 'ever',
       year: 'May 30, 1947',
       size: 1508975,
@@ -640,6 +669,7 @@ let parks = [
     {
       state: 'Hawaii',
       name: 'Haleakala',
+      twitter: 'HaleakalaNPS',
       code: 'hale',
       year: 'August 1, 1916',
       size: 33264,
@@ -662,6 +692,7 @@ let parks = [
     {
       state: 'Hawaii',
       name: 'Hawaii Volcanoes',
+      twitter: 'Volcanoes_NPS',
       code: 'havo',
       year: 'August 1, 1916',
       size: 323431,
@@ -684,6 +715,7 @@ let parks = [
     {
       state: 'Idaho, Montana, Wyoming',
       name: 'Yellowstone',
+      twitter: 'YellowstoneNPS',
       code: 'yell',
       year: 'March 1, 1872',
       size: 2219790,
@@ -706,6 +738,7 @@ let parks = [
     {
       state: 'Kentucky',
       name: 'Mammoth Cave',
+      twitter: 'MammothCaveNPS',
       code: 'maca',
       year: 'July 1, 1941',
       size: 52830,
@@ -728,6 +761,7 @@ let parks = [
     {
       state: 'Maine',
       name: 'Acadia',
+      twitter: 'AcadiaNPS',
       code: 'acad',
       year: 'February 26, 1919',
       size: 48995,
@@ -750,6 +784,7 @@ let parks = [
     {
       state: 'Michigan',
       name: 'Isle Royale',
+      twitter: 'NatlParkService',
       code: 'isro',
       year: 'April 3, 1940',
       size: 571790,
@@ -772,6 +807,7 @@ let parks = [
     {
       state: 'Minnesota',
       name: 'Voyageurs',
+      twitter: 'NatlParkService',
       code: 'voya',
       year: 'January 8, 1975',
       size: 218200,
@@ -794,6 +830,7 @@ let parks = [
     {
       state: 'Montana',
       name: 'Glacier',
+      twitter: 'GlacierNPS',
       code: 'glac',
       year: 'May 11, 1910',
       size: 1013324,
@@ -816,6 +853,7 @@ let parks = [
     {
       state: 'Nevada',
       name: 'Great Basin',
+      twitter: 'GreatBasinNPS',
       code: 'grba',
       year: 'October 27, 1986',
       size: 77180,
@@ -838,6 +876,7 @@ let parks = [
     {
       state: 'New Mexico',
       name: 'Carlsbad Caverns',
+      twitter: 'CavernsNPS',
       code: 'cave',
       year: 'May 14, 1930',
       size: 46766,
@@ -860,6 +899,7 @@ let parks = [
     {
       state: 'North Carolina, Tennessee',
       name: 'Great Smoky Mountains',
+      twitter: 'GreatSmokyNPS',
       code: 'grsm',
       year: 'June 15, 1934',
       size: 522426,
@@ -882,6 +922,7 @@ let parks = [
     {
       state: 'North Dakota',
       name: 'Theodore Roosovelt',
+      twitter: 'TRooseveltNPS',
       code: 'thro',
       year: 'November 10, 1978',
       size: 70447,
@@ -904,6 +945,7 @@ let parks = [
     {
       state: 'Ohio',
       name: 'Cuyahoga Valley',
+      twitter: 'CVNPNPS',
       code: 'cuva',
       year: 'October 11, 2000',
       size: 32950,
@@ -926,6 +968,7 @@ let parks = [
     {
       state:'Oregon',
       name: 'Crater Lake',
+      twitter: 'CraterLakeNPS',
       code: 'crla',
       year: 'May 22, 1902',
       size: 183224,
@@ -948,6 +991,7 @@ let parks = [
     {
       state: 'South Carolina',
       name: 'Congaree',
+      twitter: 'CongareeNPS',
       code: 'cong',
       year: 'November 10, 2003',
       size: 26276,
@@ -970,6 +1014,7 @@ let parks = [
     {
       state: 'South Dakota',
       name: 'Badlands',
+      twitter: 'BadlandsNPS',
       code: 'badl',
       year: 'November 10, 1978',
       size: 242756,
@@ -992,6 +1037,7 @@ let parks = [
     {
       state: 'South Dakota',
       name: 'Wind Cave',
+      twitter: 'WindCaveNPS',
       code: 'wica',
       year: 'January 9, 1903',
       size: 33923,
@@ -1013,6 +1059,7 @@ let parks = [
     },
     { state: 'Texas',
       name: 'Big Bend',
+      twitter: 'BigBendNPS',
       code: 'bibe',
       year: 'June 12, 1944',
       size: 801163,
@@ -1035,6 +1082,7 @@ let parks = [
     {
       state: 'Tennessee',
       name: 'Guadalupe Mountains',
+      twitter: 'GuadalupeMtnsNP',
       code: 'gumo',
       year: 'October 15, 1966',
       size: 86367,
@@ -1057,6 +1105,7 @@ let parks = [
     {
       state: 'US Virgin Islands',
       name: 'Virgin Islands',
+      twitter: 'NatlParkService',
       code: 'viis',
       year: 'August 2, 1956',
       size: 14948,
@@ -1078,6 +1127,7 @@ let parks = [
     {
       state: 'Utah',
       name: 'Arches',
+      twitter: 'ArchesNPS',
       code: 'arch',
       year: 'November 12, 1971',
       size: 76679,
@@ -1100,6 +1150,7 @@ let parks = [
     {
       state: 'Utah',
       name: 'Bryce Canyon',
+      twitter: 'BryceCanyonNPS',
       code: 'brca',
       year: 'February 25, 1928',
       size: 35835,
@@ -1122,6 +1173,7 @@ let parks = [
     {
       state: 'Utah',
       name: 'Capitol Reef',
+      twitter: 'CapitolReefNPS',
       code: 'care',
       year: 'December 18, 1971',
       size: 241904,
@@ -1144,6 +1196,7 @@ let parks = [
     {
       state: 'Utah',
       name: 'Canyonlands',
+      twitter: 'CanyonlandsNPS',
       code: 'cany',
       year: 'September 12, 1964',
       size: 337597,
@@ -1166,6 +1219,7 @@ let parks = [
     {
       state: 'Utah',
       name: 'Zion',
+      twitter: 'ZionNPS',
       code: 'zion',
       year: 'November 19, 1919',
       size: 147237,
@@ -1188,6 +1242,7 @@ let parks = [
     {
       state: 'Virginia',
       name: 'Shenandoah',
+      twitter: 'ShenandoahNPS',
       code: 'shen',
       year: 'May 22, 1935',
       size: 199116,
@@ -1210,6 +1265,7 @@ let parks = [
     {
       state: 'Washington',
       name: 'Mount Rainier',
+      twitter: 'MountRainierNPS',
       code: 'mora',
       year: 'March 2, 1899',
       size: 236381,
@@ -1232,6 +1288,7 @@ let parks = [
     {
       state: 'Washington',
       name: 'North Cascades',
+      twitter: 'NCascadesNPS',
       code: 'noca',
       year: 'October, 1968',
       size: 501780,
@@ -1254,6 +1311,7 @@ let parks = [
     {
       state: 'Washington',
       name: 'Olympic',
+      twitter: 'OlympicNP',
       code: 'olym',
       year: 'June 29, 1938',
       size: 922650,
@@ -1276,6 +1334,7 @@ let parks = [
     {
       state: 'Wyoming',
       name: 'Grand Teton',
+      twitter: 'GrandTetonNPS',
       code: 'grte',
       year: 'February 26, 1929',
       size: 310043,

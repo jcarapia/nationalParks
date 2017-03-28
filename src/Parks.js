@@ -6,6 +6,8 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import Select from './Select';
 import Video from './Video';
+import Chart from './Chart';
+import TwitterTimeline from './TwitterTimeline';
 
 import Data from './data/data';
 
@@ -17,34 +19,34 @@ class Parks extends Component {
     this.state = {park: Data.parks[0]} 
   }
 
-  componentDidMount() {
-    // axios.defaults.headers.common['Authorization'] = "FB68E536-BB67-40A2-91BF-DC8B9D510793";
-    // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell')
-    // .then((resp) => {
-    //     console.dir(resp);
-    // });
+  // componentDidMount() {
+  //   // axios.defaults.headers.common['Authorization'] = "FB68E536-BB67-40A2-91BF-DC8B9D510793";
+  //   // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell')
+  //   // .then((resp) => {
+  //   //     console.dir(resp);
+  //   // });
 
-    // let config = {key: 'Authorization', value: 'FB68E536-BB67-40A2-91BF-DC8B9D510793'};
-    // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell', config)
-    // .then((resp) => {
-    //     console.dir(resp);
-    // });
+  //   // let config = {key: 'Authorization', value: 'FB68E536-BB67-40A2-91BF-DC8B9D510793'};
+  //   // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell', config)
+  //   // .then((resp) => {
+  //   //     console.dir(resp);
+  //   // });
 
-    //let park = axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell',  'FB68E536-BB67-40A2-91BF-DC8B9D510793');
-    var myHeaders = new Headers({"Authorization": "FB68E536-BB67-40A2-91BF-DC8B9D510793",
-                                  "Content-Type": "application/json"
-                               });
-    //myHeaders.append('Authorization', 'FB68E536-BB67-40A2-91BF-DC8B9D510793');
-    var myInit = { method: 'GET',
-               headers: myHeaders,
-               mode: 'cors',
-               cache: 'default' };
-    fetch('https://developer.nps.gov/api/v0/parks?parkCode=yell', myInit)  
-    .then(function(response) {  
-    console.log(response) 
-  })  
+  //   //let park = axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell',  'FB68E536-BB67-40A2-91BF-DC8B9D510793');
+  //   var myHeaders = new Headers({"Authorization": "FB68E536-BB67-40A2-91BF-DC8B9D510793",
+  //                                 "Content-Type": "application/json"
+  //                              });
+  //   //myHeaders.append('Authorization', 'FB68E536-BB67-40A2-91BF-DC8B9D510793');
+  //   var myInit = { method: 'GET',
+  //              headers: myHeaders,
+  //              mode: 'cors',
+  //              cache: 'default' };
+  //   fetch('https://developer.nps.gov/api/v0/parks?parkCode=yell', myInit)  
+  //   .then(function(response) {  
+  //   console.log(response) 
+  // })  
 
-  }
+  // }
 
   getPark(park) {
     //this function will be called in the Select component
@@ -57,6 +59,8 @@ class Parks extends Component {
     let video = this.state.park.video;
     let desc = this.state.park.desc;
     let climate = this.state.park.climate;
+    let twitterHandle = this.state.park.twitter;
+
 
     return (
       <div className="parks">
@@ -80,9 +84,10 @@ class Parks extends Component {
 
         <section>
           <h3 className="park-title">Placeholder</h3>
+          <TwitterTimeline twitterHandle={twitterHandle} />
         </section>
-
         <Footer />
+
       </div>
     )
   }
